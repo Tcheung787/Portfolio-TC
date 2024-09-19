@@ -159,22 +159,22 @@ const About = () => {
   };
 
   return (
-    <section className='xl:h-[780px] pb-12 xl:py-24'>
-      <div className='container mx-auto'>
-        <h2 className='section-title mb-8 xl:mb-10 text-center mx-auto'>
-          About me
-        </h2>
-        <div className='flex flex-col xl:flex-row'>
-          {/* image */}
-          <div className='hidden xl:flex flex-1 relative' >
-            <DevImg
-              containerStyles='bg-about_shape_light w-[460px] h-[530px] bg-no-repeat relative bg-bottom -mt-20 -right-10'
-              imgSrc='/about/developer.png'
+<section className='pt-16 xl:pt-0 pb-12 xl:pb-24 mb-12'>
+  <div className='container mx-auto'>
+    <h2 className='section-title mb-8 xl:mb-10 text-center mx-auto'>
+      About me
+    </h2>
+    <div className='flex flex-col xl:flex-row'>
+      {/* image */}
+      <div className='hidden xl:flex flex-1 relative'>
+        <DevImg
+          containerStyles='bg-about_shape_light w-[460px] h-[530px] bg-no-repeat relative bg-bottom -mt-20 -right-10'
+          imgSrc='/about/developer.png'
               
             />
           </div>
           {/* tabs */}
-          <div className='flex-1 relative xl:translate-x-[-65px]'>
+          <div className='flex-1 relative xl:translate-x-[-75px]'>
             <Tabs defaultValue='personal'>
               <TabsList className='w-full grid xl:grid-cols-5 xl:max-w-[100%] xl:border dark:border-none'>
                 <TabsTrigger className='w-[162px] xl:w-auto' value='personal'>
@@ -213,10 +213,10 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      LOL stuff about me tehe
+                      Stuff about me tehe
                     </h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      I love to make things pretty
+                      I love to make things look pretty
                     </p>
                     {/* icons */}
                     <div className='grid xl:grid-cols-2 gap-4 mb-12'>
