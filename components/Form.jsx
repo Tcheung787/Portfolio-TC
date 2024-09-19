@@ -1,4 +1,4 @@
-'use client';  // Add this line to make it a Client Component
+'use client';
 
 import { useState } from 'react';
 import { Button } from './ui/button';
@@ -38,7 +38,7 @@ const Form = () => {
       });
 
       if (res.ok) {
-        // Show success message
+        // Success message
         setFormStatus({
           success: 'Thank you! Your message has been sent successfully.',
           error: null,
@@ -47,10 +47,9 @@ const Form = () => {
         // Reset form fields after successful submission
         setFormData({ name: '', email: '', message: '' });
 
-        // Make the success message disappear after 5 seconds
         setTimeout(() => {
           setFormStatus({ success: null, error: null });
-        }, 5000); // Message disappears after 5 seconds
+        }, 5000);
       } else {
         // Show error message
         setFormStatus({
@@ -58,7 +57,6 @@ const Form = () => {
           error: 'Failed to send the message. Please try again later.',
         });
 
-        // Make the error message disappear after 5 seconds
         setTimeout(() => {
           setFormStatus({ success: null, error: null });
         }, 5000);

@@ -1,4 +1,3 @@
-// app/api/sendMessage/route.js
 
 import nodemailer from 'nodemailer';
 
@@ -14,16 +13,16 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: process.env.GMAIL_USER, // Your Gmail address
-        pass: process.env.GMAIL_PASS, // Your Gmail password
+        user: process.env.GMAIL_USER, 
+        pass: process.env.GMAIL_PASS, 
       },
     });
 
     // Send the email
     await transporter.sendMail({
-      from: process.env.email, // The email address that will appear as the sender
+      from: process.env.GMAIL_USER,
       to: 'cheungtiffany02@gmail.com',
-      replyTo: email, // Replies will go to the user's email address
+      replyTo: email, 
       subject: `Message from ${name}`,
       text: message,
     });
