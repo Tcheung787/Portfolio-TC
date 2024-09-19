@@ -27,11 +27,10 @@ export async function POST(req) {
       text: message,
     });
 
-    // Return success status
     return new Response(JSON.stringify({ status: 200 }));
   } catch (error) {
     console.error('Error sending message:', error);
-    // Return error status
     return new Response(JSON.stringify({ status: 500 }));
   }
 }
+
