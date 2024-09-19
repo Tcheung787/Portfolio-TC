@@ -7,7 +7,7 @@ const Contact = () => {
     <section>
       <div className='container mx-auto'>
         {/* text & illustration */}
-        <div className='grid xl:grid-cols-2 pt-12 xl:h-[480px] mb-6 xl:mb-24 -mt-14'>
+        <div className='grid xl:grid-cols-2 pt-12 xl:h-[480px] mb-6 xl:mb-14 -mt-14'>
           {/* text */}
           <div className='flex flex-col justify-center xl:ml-12'>
             <div className='flex items-center gap-x-4 text-primary text-xl mb-4'>
@@ -24,16 +24,18 @@ const Contact = () => {
           <div className='hidden xl:flex max-w-md max-h-80 ml-14 bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat'></div>
         </div>
         {/* info text & form */}
-        <div className='grid xl:grid-cols-2 mb-24 xl:mb-32 -mt-36'>
+        <div className=
+        'grid grid-cols-1 xl:grid-cols-2 gap-y-8 xl: mb-32 xl:mb-36'>
+                        
           {/* info text */}
           <div className='flex flex-col gap-y-4 xl:gap-y-10 mb-12 xl:mb-24 text-base xl:text-xl xl:ml-12'>
             {/* mail */}
-            <div className='flex items-center gap-x-8'>
+            <div className='flex items-center gap-x-8 xl:translate-y-[-90px]'>
               <MailIcon size={30} className='text-primary' />
               <div>cheungtiffany02@gmail.com</div>
             </div>
             {/* phone */}
-            <div className='flex items-center gap-x-8'>
+            <div className='flex items-center gap-x-8 xl:translate-y-[-90px]'>
               <PhoneCall size={30} className='text-primary' />
               <div>(540) 398 1572</div>
             </div>

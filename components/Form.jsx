@@ -7,7 +7,7 @@ import { User, MailIcon, ArrowRightIcon, MessageSquare } from 'lucide-react';
 
 const Form = () => {
   return (
-    <form className='flex flex-col gap-y-4'>
+    <form className='flex flex-col gap-y-4 xl:translate-y-[-90px]'>
       {/* input */}
       <div className='relative flex items-center'>
         <Input type='name' id='name' placeholder='Name' />

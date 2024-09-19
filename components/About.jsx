@@ -83,7 +83,7 @@ const skillData = [
         name: 'Python, Java, HTML/CSS, Javascript, TypeScript, MATLAB, SQL, C/C++',
       },
       {
-        name: 'React, Tailwind CSS, Framer Motion, Next.js, JavaFX, JUnit, Selenium',
+        name: 'React, Tailwind CSS, Framer Motion, Next.js, Node.js, JavaFX, JUnit, Selenium',
       },
       {
         name: 'Methodologies: Kanban, Scrum, Agile, Waterfall',
