@@ -80,7 +80,7 @@ const skillData = [
     title: 'skills',
     data: [
       {
-        name: 'Python, Java, HTML/CSS, Javascript, TypeScript, MATLAB, SQL, C/C++',
+        name: 'Javascript, HTML/CSS, TypeScript, Python, Java, MATLAB, SQL, C/C++',
       },
       {
         name: 'React, Tailwind CSS, Framer Motion, Next.js, Node.js, JavaFX, JUnit, Selenium',
@@ -95,24 +95,31 @@ const skillData = [
     data: [
       {
         imgPath: '/about/vscode.svg',
+        link: 'https://code.visualstudio.com/',
       },
       {
         imgPath: '/about/figma.svg',
+        link: 'https://www.figma.com/',
       },
       {
         imgPath: '/about/git.svg',
+        link: 'https://git-scm.com/',
       },
       {
         imgPath: '/about/gradle.svg',
+        link: 'https://gradle.org/',
       },
       {
         imgPath: '/about/intellj.svg',
+        link: 'https://www.jetbrains.com/idea/',
       },
       {
         imgPath: '/about/pycharm.svg',
+        link: 'https://www.jetbrains.com/pycharm/',
       },
       {
         imgPath: '/about/eclipse.svg',
+        link: 'https://www.eclipse.org/',
       },
 
     ],
@@ -122,6 +129,9 @@ const certificationData = [
   {
     title: 'certifications',
     data: [
+      {
+        name: 'Deloitte Australia Technology Job Simulation Certification',
+      },
       {
         name: 'Goldman Sachs Software Engineering Job Simulation Certification',
       },
@@ -213,13 +223,13 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      Stuff about me tehe
+                      About me :)
                     </h3>
-                    <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      I love to make things look pretty
+                    <p className='subtitle max-w-2xl mx-auto xl:mx-0'>
+                    I’m a passionate web developer with a love for design. I believe in the power of collaboration and am always eager to embrace new challenges. In the future, I aspire to lead projects that make a positive impact in the tech industry.
                     </p>
                     {/* icons */}
-                    <div className='grid xl:grid-cols-2 gap-4 mb-12'>
+                    <div className='grid xl:grid-cols-2 gap-4 mb-6'>
                       {infoData.map((item, index) => {
                         return (
                           <div
@@ -236,7 +246,7 @@ const About = () => {
                     <div className='flex flex-col gap-y-2'>
                       <div className='text-primary'>My Hobbies</div>
                       <div className='border-b border-border '></div>
-                      <div>Baking, Eating, Working out, Reading, Art</div>
+                      <div>Art, Cooking, Baking, Eating, Hiking, Tennis, Working out, Reading</div>
                     </div>
                   </div>
                 </TabsContent>
@@ -350,16 +360,18 @@ const About = () => {
                       {/* tool list */}
                       <div className='flex gap-x-8 justify-center xl:justify-start'>
                         {getData(skillData, 'tools').data.map((item, index) => {
-                          const { imgPath } = item;
+                          const { imgPath, link } = item;
                           return (
                             <div key={index}>
-                              <Image
-                                src={imgPath}
-                                width={48}
-                                height={48}
-                                alt=''
-                                priority
-                              />
+                              <a href={link} target='_blank' rel='noopener noreferrer'>
+                                <Image
+                                  src={imgPath}
+                                  width={48}
+                                  height={48}
+                                  alt='Tool Logo'
+                                  priority
+                                />
+                              </a>
                             </div>
                           );
                         })}
@@ -373,7 +385,7 @@ const About = () => {
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-8'>Certifications and Awards</h3>
                     {/* certifications */}
-                    <div className='mb-8'>
+                    <div className='mb-6'>
                       <h4 className='text-xl font-semibold mb-2'>Certifications</h4>
                       <div className='border-b border-border mb-2'></div>
                       {/* Certification list */}
