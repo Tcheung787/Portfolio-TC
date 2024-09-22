@@ -32,7 +32,7 @@ const Hero = () => {
                   <Send size={20} />
                 </Button>
               </Link>
-              <Link href='/TiffC_Resume.pdf' target="_blank" rel="noopener noreferrer" download>
+              <Link href='/TiffanyC_Resume.pdf' target="_blank" rel="noopener noreferrer" download>
                 <Button variant='secondary' className='gap-x-2'>
                   Resume
                   <Download size={20} />
