@@ -169,7 +169,7 @@ const About = () => {
   };
 
   return (
-<section className='pt-16 xl:pt-0 pb-12 xl:pb-24 mb-12'>
+<section className='pt-48 sm: pt-8 md:pt-8 lg:pt-16 xl:pt-0 pb-12 xl:pb-24 mb-12'>
   <div className='container mx-auto'>
     <h2 className='section-title mb-8 xl:mb-10 text-center mx-auto'>
       About me

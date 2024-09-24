@@ -22,7 +22,7 @@ const MobileNav = () => {
               linkStyles='text-2xl'
             />
           </div>
-          <Socials containerStyles='flex gap-x-4' iconsStyles='text-2xl' />
+          <Socials containerStyles='flex gap-x-8' iconsStyles='text-2xl' />
         </div>
       </SheetContent>
     </Sheet>
