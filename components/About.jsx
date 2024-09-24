@@ -169,9 +169,10 @@ const About = () => {
   };
 
   return (
-<section className='pt-56 sm: pt-8 md:pt-6 lg:pt-16 xl:pt-0 pb-12 xl:pb-24 mb-12'>
-  <div className='container mx-auto'>
-    <h2 className='section-title mb-8 xl:mb-10 text-center mx-auto'>
+
+    <section className='xl:h-[860px] pb-12 xl:py-24'>
+      <div className='container mx-auto'>
+        <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>
       About Me
     </h2>
     <div className='flex flex-col xl:flex-row'>

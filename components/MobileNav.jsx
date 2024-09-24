@@ -13,16 +13,14 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent>
         <div className='flex flex-col items-center justify-between h-full py-8'>
-          {/* Main Container for Logo and Navigation */}
           <div className='flex flex-col items-center gap-y-32'>
-            {/* Add padding and margin as needed for responsiveness */}
             <Logo />
             <Nav
               containerStyles='flex flex-col items-center gap-y-6'
               linkStyles='text-2xl'
             />
           </div>
-          <Socials containerStyles='flex gap-x-8' iconsStyles='text-2xl' />
+          <Socials containerStyles='flex gap-x-4' iconsStyles='text-2xl' />
         </div>
       </SheetContent>
     </Sheet>
