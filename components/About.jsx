@@ -169,10 +169,10 @@ const About = () => {
   };
 
   return (
-<section className='pt-48 sm: pt-8 md:pt-8 lg:pt-16 xl:pt-0 pb-12 xl:pb-24 mb-12'>
+<section className='pt-56 sm: pt-8 md:pt-6 lg:pt-16 xl:pt-0 pb-12 xl:pb-24 mb-12'>
   <div className='container mx-auto'>
     <h2 className='section-title mb-8 xl:mb-10 text-center mx-auto'>
-      About me
+      About Me
     </h2>
     <div className='flex flex-col xl:flex-row'>
       {/* image */}
@@ -223,7 +223,7 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      About me :)
+                      Stuff About Me :)
                     </h3>
                     <p className='subtitle max-w-2xl mx-auto xl:mx-0'>
                     I’m a passionate web developer with a love for design. I believe in the power of collaboration and am always eager to embrace new challenges. In the future, I aspire to lead projects that make a positive impact in the tech industry.
