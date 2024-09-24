@@ -169,16 +169,15 @@ const About = () => {
   };
 
   return (
-
-    <section className='min-h-screen pb-12 xl:py-24'>
+    <section className='relative top-12 sm:top-24 xl:h-[860px] pb-12 xl:py-24'>
       <div className='container mx-auto'>
         <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>
-      About Me
-    </h2>
-    <div className='flex flex-col xl:flex-row'>
-      {/* image */}
-      <div className='hidden xl:flex flex-1 mb-4'>
-        <DevImg
+          About me
+        </h2>
+        <div className='flex flex-col xl:flex-row'>
+          {/* image */}
+          <div className='hidden xl:flex flex-1 relative'>
+            <DevImg
           containerStyles='bg-about_shape_light w-[460px] h-[530px] bg-no-repeat relative bg-bottom -mt-20 -right-10'
           imgSrc='/about/developer.png'
               
