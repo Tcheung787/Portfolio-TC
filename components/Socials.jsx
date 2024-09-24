@@ -26,18 +26,7 @@ const Socials = ({ containerStyles, iconsStyles }) => {
       {icons.map((icon, index) => {
         return (
           <Link href={icon.path} key={index}>
-            <div
-              className={`${iconsStyles}`}
-              style={{
-                fontSize: '40px',
-                border: '2px solid #8866cc', // Add border color
-                borderRadius: '10px', // Rounded corners
-                padding: '4px', // Space inside the border
-                display: 'inline-block',
-              }}
-            >
-              {icon.name}
-            </div>
+            <div className={`${iconsStyles}`}>{icon.name}</div>
           </Link>
         );
       })}
