@@ -41,7 +41,7 @@ const Hero = () => {
             </div>
             {/* socials */}
             <Socials
-              containerStyles='flex gap-x-6 mx-auto xl:mx-0'
+              containerStyles='flex gap-x-6 mx-auto xl:mx-0 mb-10'
               iconsStyles='text-foreground text-[22px] hover:text-primary transition-all'
             />
           </div>
