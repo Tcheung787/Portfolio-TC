@@ -25,7 +25,7 @@ const Hero = () => {
             Hi, I'm Tiffany! I'm a student at the University of Virginia pursuing a dual major in computer science and cognitive neuroscience, along with a minor in engineering business. I thrive at the intersection of technology, aesthetics, and business strategy, driven by my passion for enhancing and designing technology for the human experience.
             </p>
             {/* buttons */}
-            <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-10'>
+            <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-8'>
               <Link href='/contact'>
                 <Button className='gap-x-2'>
                   Contact me

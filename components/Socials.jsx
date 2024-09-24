@@ -29,7 +29,7 @@ const Socials = ({ containerStyles, iconsStyles }) => {
             <div
               className={`${iconsStyles}`}
               style={{
-                fontSize: '40px',
+                fontSize: '30px',
                 border: '2px solid #8866cc', // Add border color
                 borderRadius: '10px', // Rounded corners
                 padding: '4px', // Space inside the border
