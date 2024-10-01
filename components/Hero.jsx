@@ -24,17 +24,20 @@ const Hero = () => {
             <p className='subtitle max-w-[645px] mx-auto xl:mx-0'>
             Hi, I'm Tiffany! I'm a student at the University of Virginia pursuing a dual major in computer science and cognitive neuroscience, along with a minor in engineering business. I thrive at the intersection of technology, aesthetics, and business strategy, driven by my passion for enhancing and designing technology for the human experience.
             </p>
-{/* buttons */}
-<div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-10'>
+            {/* buttons */}
+            <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-10'>
               <Link href='/contact'>
                 <Button className='gap-x-2'>
-                  Contact me <Send size={18} />
+                  Contact me
+                  <Send size={20} />
                 </Button>
               </Link>
-              <Button variant='secondary' className='gap-x-2'>
-                Resume
-                <Download size={18} />
-              </Button>
+              <Link href='/TiffanyC_Resume.pdf' target="_blank" rel="noopener noreferrer" download>
+                <Button variant='secondary' className='gap-x-2'>
+                  Resume
+                  <Download size={20} />
+                </Button>
+              </Link>
             </div>
             {/* socials */}
             <Socials
@@ -44,7 +47,7 @@ const Hero = () => {
           </div>
           {/* image */}
           <div className='hidden xl:flex relative'>
-        
+
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-8 -left-12'></div>
             <DevImg
             containerStyles='bg-hero_shape w-[450px] h-[450px] bg-no-repeat relative bg-bottom -mt-20 -left-12'
